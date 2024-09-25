@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida in the United States</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="background">
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">Florida</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="capital.html">Capital</a>
+            <a href="city.html">Cities</a>
+            <a href="more-cities.html">More Cities</a>
+        </nav>
+    </header>
+    
+    <div id="main-container">
+
+        <div id="left-container">
+
+            <aside>
+                <h1 class="aside-title">More Info</h1>
+                <p>
+                    <ul>
+                        <li><a class="aside-links" href="https://www.myflorida.com/" target="blank">Florida Main Website</a><br>
+                        <li><a class="aside-links" href="https://myfloridahistory.org/" target="blank">Florida's History</a><br>
+                        <li><a class="aside-links" href="https://en.wikipedia.org/wiki/Florida" target="blank">Florida Wikipedia</a><br>
+                        <li><a class="aside-links" href="https://www.floridastateparks.org/" target="blank">Florida State Parks</a><br>
+                        <li><a class="aside-links" href="https://www.visitflorida.com/" target="blank">Visit Florida</a><br>
+    
+                    </ul>
+                </p>
+            </aside>
+
+        </div>
+
+        <div id="right-container">
+
+            <section>
+                <h1 class="section-title">About Florida</h1>
+                <p>Florida is the 27th state in the United States,
+                    being popularly known for its beaches.
+                </p>
+                    <div class="flex-container" width="600px">
+                <br>
+                <table>
+                    <tr class="table-header">
+                        <th width="200px">City</th>
+                        <th width="200px">County</th>
+                        <th width="200px">Population</th>
+                    </tr>
+    
+                    <tr class="table-data">
+                        <td>Miami</td>
+                        <td>Dade</td>
+                        <td>460,289</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Orlando</td>
+                        <td>Orange</td>
+                        <td>307,573</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Pensacola</td>
+                        <td>Escambia</td>
+                        <td>53,473</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Tampa</td>
+                        <td>Hillsborough</td>
+                        <td>408,510</td>
+                    </tr>
+
+
+                </table>
+                
+                </div>
+                <div class="parent-container">
+                    <img id="main-img" src=".\images\florida1.jpg" alt="Florida">
+                    <img class="child-img" src=".\images\sym1.png" alt="florida-map">
+                </div>
+            </p>
+            </section><br>
+            <form class="form" method="POST">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter Here" required><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter Here" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" placeholder="Enter Here" required><br>
+
+                <label for="confirm">Confirm Email Address:</label>
+                <input type="text" id="confirm" name="confirm" placeholder="Enter Here" required><br>
+
+                <label for="question">Ask a Question:</label>
+                <textarea id="question" name="question" placeholder="Enter Here"></textarea><br>
+
+                <br>
+                <button type="button" onclick="verifyEmail();">Submit</button><br>
+
+                <br>
+
+                <div id="error-message"></div>
+            </form>
+            <h2>References:</h2>
+            <p>Wikipedia Contributors. "Florida". Wikipedia</p>
+            <a class="ref-link" href="https://en.wikipedia.org/wiki/Florida" target="_blank">Florida Wikipedia</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
